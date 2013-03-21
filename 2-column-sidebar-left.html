@@ -4,15 +4,17 @@
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Home Prototype Foundation 4</title>
+  <title>2-column Side bar left Prototype Foundation 4</title>
 
   <link rel="stylesheet" href="stylesheets/normalize.css" />
   
   <link rel="stylesheet" href="stylesheets/app.css" />
   
-
+  
   <script src="javascripts/vendor/custom.modernizr.js"></script>
-
+  <!--[if IE 8]>
+  <link rel="stylesheet" href="stylesheets/ie8-grid-foundation-4.css" />
+  <![endif]-->
 </head>
 <body>
 <!-- Top Bar -->
@@ -103,110 +105,109 @@
 </div>
 <!-- End Top Nav Bar Content -->
 
-<!-- Orbit and news Content -->
-	<div class="row">
-		<div class="large-8 columns">
-			<ul data-orbit>
-				<li>
-				  <img src="images/students.jpg" />
-				  <div class="orbit-caption">Here is a caption...</div>
-				</li>
-				<li>
-				  <img src="images/students2.jpg" />
-				  <div class="orbit-caption">Here is a caption 2...</div>
-				</li>
-				<li>
-				  <img src="images/president.jpg" />
-				  <div class="orbit-caption">Here is a caption 3...</div>
-				</li>
-			</ul> 
-		</div>
-		<div class="large-4 columns">
-			<div class="section-container tabs" data-section="tabs">
-			  <section class="section">
-				<p class="title"><a href="#">News</a></p>
-				<div class="content">
-					<h5><a href="#">Title of the news 1</a></h5>
-					<p>Okra welsh onion salad wakame lotus root tigernut turnip greens gourd fennel plantain. Azuki  pea.</p>
-					<h5><a href="#">Title of the news 2</a></h5>
-					<p>Okra welsh onion salad wakame lotus root tigernut turnip greens gourd fennel plantain. Azuki collard greens earthnut pea.</p> 
-					<h5><a href="#">Title of the news 3</a></h5>
-					<p>Okra welsh o tigernut turnip plantain. Azuki bean caulie chard collard greens earthnut pea.</p> 
-				</div>
-			  </section>
-			  <section class="section">
-				<p class="title"><a href="#">Events</a></p>
-				<div class="content">
-					<h5><a href="#">Event 1</a></h5>
-					<p>Veggies sunt bona vobis, proinde  carrot sweet pepper eggplant water spinach grape leek. </p>
-					<h5><a href="#">Event 2</a></h5>
-					<p>Veggies sunt bona vobis, proinde vos postulo ndelion groundnut carrot sweet pepper eggplant water spinach grape leek. </p> 
-					<h5><a href="#">Event 3</a></h5>
-					<p>Veggies sunt bona vobis, proinde vos postulo esse sweet pepper eggplant water spinach grape leek. </p>
-				</div>
-			  </section>
-			</div>	
-		</div>
-	</div>
-<!-- End orbit and news Content -->
+<!-- Header Content -->
+<header id="header" class="row">
+  <div class="large-12 columns">
+	<!--<h1 class="subheader">Office of the Superintendent</h1>-->
+	<h2>Office of the Superintendent</h2>
+  </div>
+  
+</header>
+<!-- End Header Content -->
 
-<!-- Default featured Content -->
+<!-- Breadcrumbs -->
 <div class="row">
-  <div class="twelve columns">
-	  <h3>Recent Posts</h3>
+  <div class="large-6 columns">
+	<ul class="breadcrumbs">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">Leadership</a></li>
+	  <li class="current"><a href="#">Superintendent</a></li>
+	</ul>
   </div>
 </div>
-<div class="row">
-	<div class="large-12 columns">
-		<ul class="small-block-grid-3">
-			<li>			  
-			    <a href="#"><img src="images/featured1.jpg" /></a>
-				<h3><a href="#">Feature 1</a></h3>
-				<p>Text why this image made it to the home page. Perhaps a notable student?</p>
-			</li>
-		    <li>
-				<a href="#"><img src="images/featured2.jpg" /></a>
-				<h3><a href="#">Feature 2</a></h3>
-				<p>Text why this image made it to the home page. Perhaps a special project students and faculty are working on?</p>
-			</li>
-			<li>
-			    <a href="#"><img src="images/featured3.jpg" /></a>
-				<h3><a href="#">Feature 3</a></h3>
-				<p>Text why this image made it here, perhaps the USNA getting ready for graduation.</p>
-			</li>
-		</ul>	
+<!-- End Breadcrumbs -->
+
+<!-- Container row -->
+<div class="row">	
+	<!-- Main content -->	
+	<div class="large-9 push-3 columns">
+		<div class="row">
+			<div class="large-12 columns">
+			  <!-- Basic orbit markup -->
+				<ul data-orbit>
+					<li>
+					  <img src="images/supe.jpg" />
+					  <div class="orbit-caption">Here is a caption...</div>
+					</li>
+					<li>
+					  <img src="images/supe-02.jpg" />
+					  <div class="orbit-caption">Here is a caption 2...</div>
+					</li>
+					<li>
+					  <img src="images/supe-03.jpg" />
+					  <div class="orbit-caption">Here is a caption 3...</div>
+					</li>					
+				</ul>			  
+			</div>
+	    </div>
+	    <div class="row">
+			<div class="large-12 columns">
+			  <h3>Welcome</h3>
+			  <div class="row">
+				<div class="large-8 columns">
+				  <p>Summer purslane lotus root winter purslane gourd leek celery horseradish tomatillo sorrel zucchini quandong.
+				  Cress asparagus sweet pepper kakadu plum cabbage endive tigernut coriander yarrow fava bean corn sorrel. Tatsoi
+				  winter purslane potato cress chicory sorrel swiss chard sea lettuce lotus root salsify soko carrot turnip radicchio
+				  mustard jicama. Kombu lettuce grape garlic bitterleaf soybean asparagus epazote water spinach fava bean okra mung bean courgette.
+				  Bell pepper broccoli rabe winter purslane kohlrabi kombu courgette salad garbanzo earthnut pea. </p>
+				  <p>Carrot swiss chard salsify sorrel melon beet greens courgette artichoke bush tomato epazote lotus root earthnut pea kohlrabi fennel pea sprouts.
+				  Endive sorrel chickpea bush tomato eggplant komatsuna horseradish tatsoi soybean melon leek burdock turnip maize artichoke.
+				  Rock melon soko arugula watercress lotus root water chestnut avocado lettuce soybean garlic.
+				  Summer purslane asparagus wakame garlic spinach radicchio nori prairie turnip kohlrabi bunya nuts fennel. Winter purslane broccoli rabe avocado epazote spinach kombu summer purslane.
+				  Sweet pepper sorrel rutabaga leek burdock chard water spinach plantain pumpkin swiss chard grape garlic kombu black-eyed pea artichoke amaranth</p>
+				</div>
+				<div class="large-4 columns">
+				  <a href="#" class="th"><img src="images/miller_m_vadm_bio.jpg"></a>
+				  <p>Full biography</p>
+				  <blockquote>
+					<p>Chard celtuce winter purslane grape plantain horseradish.
+					<cite>Vice Admiral Miller</cite></p>
+				  </blockquote>
+				</div>
+			  </div>	
+			</div>  
+	    </div>
 	</div>
-</div>
-<div class="row">
-	<div class="large-12 columns">
-		<h3>Connect with us</h3>
-		<div class="section-container tabs" data-section="tabs">
+    <!-- End main content -->
+	<!-- Side bar -->	
+	<div class="large-3 pull-9 columns">
+		<div class="section-container accordion" data-section="accordion">
 			<section class="section">
-			  <p class="title"><a href="#">Facebook</a></p>
-			  <div class="content">
-				<p>This is the Facebook content. Short ribs corned beef pig swine boudin ball tip.
-				Pork venison tail, tri-tip ham hock beef bresaola kielbasa beef ribs flank. Swine short ribs sausage hamburger meatball kielbasa.
-				Spare ribs leberkas brisket bacon, shoulder short ribs turducken turkey biltong strip steak ham sirloin.</p>
-			  </div>
+			  <p class="title"><a href="#">Overview</a></p>			 
 			</section>
 			<section class="section">
-			  <p class="title"><a href="#">Twitter</a></p>
-			  <div class="content">
-				<p>This is Twitter content. Now you see it! Meatloaf pork belly prosciutto salami short loin, t-bone filet mignon jowl drumstick. Short loin turkey pork ball tip turducken
-		        capicola jowl tongue short ribs. Shank ribeye cow filet mignon, strip steak ground round frankfurter.</p>
-			  </div>
+			  <p class="title"><a href="#">Mission</a></p>			 
 			</section>
 			<section class="section">
-			  <p class="title"><a href="#">Flickr</a></p>
+			  <p class="title"><a href="#">History</a></p>			 
+			</section>
+			<section class="section active">
+			  <p class="title"><a href="#">Leadership</a></p>
 			  <div class="content">
-				<p>This is the Flickr feed. Beef t-bone pancetta, biltong kielbasa pastrami capicola shoulder tail andouille swine shankle pig.
-		   		  chicken pork loin short loin rump, turducken flank chuck pork chop doner capicola turkey strip steak tongue tail shank.</p>
+				<ul class="side-nav">
+				  <li class="active"><a href="#">Superintendent</a></li>
+				  <li><a href="#">Board of Visitors</a></li>
+				  <li><a href="#">Commandant</a></li>
+				  <li><a href="#">Command Master Chief</a></li>
+				</ul>
 			  </div>
 			</section>
-		</div>	
+		</div>
 	</div>
+	<!-- End Side bar -->
 </div>
-<!-- End Featured Content -->
+<!-- End Container row -->
 
 <!-- Footer Content -->
 <footer class="row full-width">
