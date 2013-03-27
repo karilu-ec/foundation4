@@ -394,7 +394,7 @@
     content: " ";
     display: table;
   }
-.lt-ie9  .top-bar:after {
+  .lt-ie9  .top-bar:after {
     clear: both;
   }
 .lt-ie9  .top-bar .toggle-topbar {
@@ -439,19 +439,19 @@
     display: none;
   }
 
-  /*.lt-ie9 .top-bar-section li a:not(.button) {
-    padding: 0 15px;
-    line-height: 45px;
-    background: #19567a;
-  }*/
+  .lt-ie9 .top-bar-section .has-form div.row {
+    width: 100%;
+    min-width: 0;    
+  }
   .lt-ie9 .top-bar-section ul li > a {
     background: #19567a;
-    /*padding-right:15px;*/
-   /* line-height: 45px;*/
+    padding: 0 15px;    
+    line-height: 45px;
   }
-  .lt-ie9 .top-bar-section li a:not(.button):hover {
-    background: black;
-  }
+
+  .lt-ie9 .top-bar-section > ul > li a:hover, .lt-ie9 .top-bar-section > ul > li a:focus { background: #cccccc; }
+  .lt-ie9 .top-bar-section > ul > li.active { background: #cccccc; color: #fff; }
+
   .lt-ie9 .top-bar-section .has-dropdown > a {
     padding-right: 35px !important;
   }
@@ -520,4 +520,48 @@
   }
   .lt-ie9 .top-bar-section ul.right li .dropdown li .dropdown {
     right: 100%;
+  }
+
+/*Fix for the sections: horizontal nav bar*/
+
+
+
+  .lt-ie9 .section-container.horizontal-nav {
+    position: relative;
+    background: #efefef;
+    border: 1px solid #cccccc;
+    height: 50px;
+  }
+  .lt-ie9 .section-container.horizontal-nav section,
+  .lt-ie9 .section-container.horizontal-nav .section {
+    padding-top: 0;
+    border: 0;
+    position: static;
+  }
+  .lt-ie9 .section-container.horizontal-nav section .title,
+  .lt-ie9 .section-container.horizontal-nav .section .title {
+    width: auto;
+    border: 1px solid #cccccc;
+    border-left: 0;
+    top: -1px;
+    position: absolute;
+    z-index: 1;
+  }
+  .lt-ie9 .section-container.horizontal-nav section .title a,
+  .lt-ie9 .section-container.horizontal-nav .section .title a {
+    width: 100%;
+  }
+  .lt-ie9 .section-container.horizontal-nav section .content,
+  .lt-ie9 .section-container.horizontal-nav .section .content {
+    display: none;
+  }
+  .lt-ie9 .section-container.horizontal-nav section.active .content,
+  .lt-ie9 .section-container.horizontal-nav .section.active .content {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: -2px;
+    min-width: 12.5em;
+    border: 1px solid #cccccc;
   }
